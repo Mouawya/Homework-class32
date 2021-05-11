@@ -1,0 +1,51 @@
+2021-05-11 11:37:51 info: ----------------------------------------------
+2021-05-11 11:37:51 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-05-11 11:37:51 info: ----------------------------------------------
+2021-05-11 11:37:58 info: All unit tests passed.
+2021-05-11 11:38:04 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:38:17 - Unknown word (Mouawya)
+
+2021-05-11 11:38:10 info: Disclaimer turned off
+2021-05-11 11:38:39 info: ----------------------------------------
+2021-05-11 11:38:39 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-05-11 11:38:39 info: ----------------------------------------
+2021-05-11 11:38:45 info: All unit tests passed.
+2021-05-11 11:38:49 info: All steps were completed successfully
+2021-05-11 11:39:19 info: -------------------------------------------
+2021-05-11 11:39:19 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-05-11 11:39:19 info: -------------------------------------------
+2021-05-11 11:39:24 info: All unit tests passed.
+2021-05-11 11:39:28 info: All steps were completed successfully
+2021-05-11 11:39:55 info: --------------------------------------------
+2021-05-11 11:39:55 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-05-11 11:39:55 info: --------------------------------------------
+2021-05-11 11:40:00 info: All unit tests passed.
+2021-05-11 11:40:04 info: All steps were completed successfully
+2021-05-11 11:40:32 info: -------------------------------------------------
+2021-05-11 11:40:32 info: >>> Running Unit Test `ex5-shoppingCartRedux` <<<
+2021-05-11 11:40:32 info: -------------------------------------------------
+2021-05-11 11:40:37 info: All unit tests passed.
+2021-05-11 11:40:41 info: All steps were completed successfully
+2021-05-11 11:41:07 info: -----------------------------------------
+2021-05-11 11:41:07 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-05-11 11:41:07 info: -----------------------------------------
+2021-05-11 11:41:13 error: *** Unit Test Error Report ***
+
+- calculateTotalPrice should return the total price in Euros
+  Expected: Total: €16.90
+  Received: Total: €16.9
+
+2021-05-11 11:41:15 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  32:3  warning  Avoid `for in` loops  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-05-11 11:41:45 info: -------------------------------------------
+2021-05-11 11:41:45 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-05-11 11:41:45 info: -------------------------------------------
+2021-05-11 11:41:50 info: All unit tests passed.
+2021-05-11 11:41:54 info: All steps were completed successfully

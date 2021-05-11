@@ -1,0 +1,13 @@
+*** Unit Test Error Report ***
+
+- calculateTotalPrice should return the total price in Euros
+  Expected: Total: €16.90
+  Received: Total: €16.9
+
+*** ESLint Report ***
+
+ex6-totalCost.js
+  32:3  warning  Avoid `for in` loops  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+

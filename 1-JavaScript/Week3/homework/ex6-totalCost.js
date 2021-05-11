@@ -20,12 +20,25 @@ instead!
    Use `console.log` to display the result.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  beers: 2.5,
+  chips: 3.75,
+  cola: 1.65,
+  biscuit: 2.55,
+  meat: 6.45,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(cartForParty) {
+  const total = [];
+  for (const property in cartForParty) {
+    total.push(cartForParty[property]);
+  }
+  let sum = 0;
+  for (const p of total) sum += p;
+
+  return `Total: €${sum}`;
 }
+
+console.log(calculateTotalPrice(cartForParty));
 
 // this is one example, you will need to write a different object
 calculateTotalPrice({
