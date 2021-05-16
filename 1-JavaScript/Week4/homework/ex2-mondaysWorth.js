@@ -29,8 +29,18 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(task, rate) {
+  const totalRate = task
+    .map(function (obj) {
+      return (obj.duration * rate) / 60;
+    })
+    .reduce(function (accumulator, currentValue) {
+      return accumulator + currentValue;
+    });
+  return totalRate.toLocaleString('nl-NL', {
+    style: 'currency',
+    currency: 'EUR',
+  });
 }
 
 // example use case

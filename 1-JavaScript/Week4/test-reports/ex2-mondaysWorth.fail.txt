@@ -1,0 +1,5 @@
+*** Unit Test Error Report ***
+
+- mondaysWorth should compute the earnings as a formatted Euro amount
+  Expected: €187.50
+  Received: € 187,50
