@@ -41,12 +41,9 @@ function selectRandomly(myArr) {
 }
 
 function tellFortune(kids, partner, location, job) {
-  kids = selectRandomly(kids);
-  partner = selectRandomly(partner);
-  location = selectRandomly(location);
-  job = selectRandomly(job);
-
-  return `You will be a ${job} in ${location}, married to ${partner} with ${kids} kids.`;
+  return `You will be a ${selectRandomly(job)} in ${selectRandomly(
+    location
+  )}, married to ${selectRandomly(partner)} with ${selectRandomly(kids)} kids.`;
 }
 
 console.log(tellFortune(numKids, partnerNames, locations, jobTitles));

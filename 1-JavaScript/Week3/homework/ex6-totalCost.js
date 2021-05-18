@@ -28,14 +28,18 @@ const cartForParty = {
 };
 
 function calculateTotalPrice(cartForParty) {
-  const total = [];
-  for (const property in cartForParty) {
-    total.push(cartForParty[property]);
-  }
-  let sum = 0;
-  for (const p of total) sum += p;
+  const total = Object.values(cartForParty).reduce(function (
+    accumulator,
+    currentValue
+  ) {
+    return accumulator + currentValue;
+  });
+  const price = new Intl.NumberFormat('nl-NL', {
+    style: 'currency',
+    currency: 'EUR',
+  }).format(total);
 
-  return `Total: €${sum}`;
+  return `Total: ${price}`;
 }
 
 console.log(calculateTotalPrice(cartForParty));

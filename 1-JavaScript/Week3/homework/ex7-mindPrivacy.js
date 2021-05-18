@@ -27,10 +27,13 @@ const employeeRecords = [
 ];
 
 function filterPrivateData(employeeRecords) {
-  const employeeData = [];
-  for (const { name, occupation, email } of employeeRecords) {
-    employeeData.push({ name, occupation, email });
-  }
+  const employeeData = employeeRecords.map(function ({
+    name,
+    occupation,
+    email,
+  }) {
+    return { name, occupation, email };
+  });
   return employeeData;
 }
 
