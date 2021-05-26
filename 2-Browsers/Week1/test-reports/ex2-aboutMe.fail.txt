@@ -1,0 +1,6 @@
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:25 - Unknown word (Mouawya)
+ex2-aboutMe/index.js:17:25 - Unknown word (Judaydt)
+ex2-aboutMe/index.js:17:33 - Unknown word (Artoz)

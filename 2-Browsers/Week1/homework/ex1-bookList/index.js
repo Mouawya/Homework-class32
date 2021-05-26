@@ -39,8 +39,48 @@ const myBooks = [
   },
 ];
 
-function createBookList(books) {
-  // your code goes in here, return the ul element
+function createBookList(books, index) {
+  const ulEl = document.createElement('ul');
+  document.querySelector('#bookList').appendChild(ulEl);
+
+  const bookInfo = books.forEach((book) => {
+    const pEl = document.createElement('p');
+    pEl.textContent = `${book.title} - ${book.author}`;
+    const liEl = document.createElement('li');
+    liEl.appendChild(pEl);
+    return bookInfo;
+  });
+
+  ulEl.appendChild(bookInfo);
+
+  //adding the images
+
+  const image = document.createElement('img');
+  if (index === 0) {
+    image.src =
+      '/2-Browsers/Week1/homework/ex1-bookList/assets/the_design_of_everyday_things.jpg';
+    bookInfo.appendChild(image);
+  } else {
+    if (index === 1) {
+      image.src =
+        '/2-Browsers/Week1/homework/ex1-bookList/assets/the_most_human_human.jpg';
+      bookInfo.appendChild(image);
+    } else {
+      image.src =
+        '/2-Browsers/Week1/homework/ex1-bookList/assets/the_pragmatic_programmer.jpg';
+      bookInfo.appendChild(image);
+    }
+  }
+
+  // styling
+
+  if (books.alreadyRead === true) {
+    bookInfo.style.backgroundColor = 'green';
+  } else {
+    bookInfo.style.backgroundColor = 'red';
+  }
+
+  return ulEl;
 }
 
 const ulElement = createBookList(myBooks);

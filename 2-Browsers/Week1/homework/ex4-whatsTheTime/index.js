@@ -6,7 +6,13 @@
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
+  const currentDate = new Date();
+  const hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+  const seconds = currentDate.getSeconds();
+  document.body.textContent = hours + ':' + minutes + ':' + seconds;
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+window.setInterval(addCurrentTime, 1000);
+
+window.addEventListener('load', addCurrentTime);

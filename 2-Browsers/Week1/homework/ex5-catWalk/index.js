@@ -19,8 +19,28 @@
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const image = document.querySelector('img');
+let position = 0;
 function catWalk() {
-  // TODO complete this function
+  image.style.left = `${position}px`;
+  position += 10;
+  if (position === document.body.clientWidth || position === innerWidth) {
+    position = 0;
+  }
+
+  if (
+    position === document.body.clientWidth / 2 ||
+    position === innerWidth / 2
+  ) {
+    window.clearInterval(moving);
+    image.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+
+    // I try here to recall 'moving' so the cat continue walking after 5 sec dancing but It is not working this way!
+    setTimeout(moving, 5000);
+  }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+const moving = window.setInterval(catWalk, 50);
+
+window.addEventListener('load', catWalk);

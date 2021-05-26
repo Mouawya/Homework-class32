@@ -1,0 +1,100 @@
+2021-05-26 04:52:20 info: ---------------------------------------
+2021-05-26 04:52:20 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-05-26 04:52:20 info: ---------------------------------------
+2021-05-26 04:52:35 info: All unit tests passed.
+2021-05-26 04:52:39 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  15:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  17:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2021-05-26 04:52:42 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:23 - Unknown word (Mouawya)
+ex2-aboutMe/index.js:17:23 - Unknown word (Judaydt)
+ex2-aboutMe/index.js:17:31 - Unknown word (Artoz)
+
+2021-05-26 04:54:45 info: ---------------------------------------
+2021-05-26 04:54:45 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-05-26 04:54:45 info: ---------------------------------------
+2021-05-26 04:54:54 info: All unit tests passed.
+2021-05-26 04:54:59 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:25 - Unknown word (Mouawya)
+ex2-aboutMe/index.js:17:25 - Unknown word (Judaydt)
+ex2-aboutMe/index.js:17:33 - Unknown word (Artoz)
+
+2021-05-26 04:55:31 info: --------------------------------------------
+2021-05-26 04:55:31 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-05-26 04:55:31 info: --------------------------------------------
+2021-05-26 04:55:39 error: *** Unit Test Error Report ***
+
+- whatsTheTime should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+2021-05-26 04:55:41 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  13:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-05-26 05:06:14 info: --------------------------------------------
+2021-05-26 05:06:14 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-05-26 05:06:14 info: --------------------------------------------
+2021-05-26 05:06:24 info: All unit tests passed.
+2021-05-26 05:06:28 info: All steps were completed successfully
+2021-05-26 05:06:59 info: ------------------------------------------
+2021-05-26 05:06:59 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2021-05-26 05:06:59 info: ------------------------------------------
+2021-05-26 05:07:05 error: *** Unit Test Error Report ***
+
+- Game Of Life: a living cell with zero living neighbors should die and have its life time reset to zero
+- Game Of Life: a living cell with one living neighbor should die and have its life time reset to zero
+- Game Of Life: a living cell with three living neighbors should survive and have its life time incremented by one
+- Game Of Life: a living cell with four living neighbors should die and have its life time reset to zero
+- Game Of Life: a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+2021-05-26 06:19:20 info: ------------------------------------------
+2021-05-26 06:19:20 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2021-05-26 06:19:20 info: ------------------------------------------
+2021-05-26 06:19:29 info: All unit tests passed.
+2021-05-26 06:19:34 info: All steps were completed successfully
+2021-05-26 06:21:27 info: ----------------------------------------
+2021-05-26 06:21:27 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-05-26 06:21:27 info: ----------------------------------------
+2021-05-26 06:21:37 error: *** Unit Test Error Report ***
+
+- Generated HTML should contain a <ul> that is a child of <div id="bookList">
+- Generated HTML should contain a <ul> with 3 <li> elements
+- Generated HTML should contain an <li> with title and author for each book of the `myBooks` array
+- Generated HTML should contain an <img> element for each book
+
+2021-05-26 06:21:39 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  57:13  error  Expected '===' and instead saw '=='  eqeqeq
+  62:15  error  Expected '===' and instead saw '=='  eqeqeq
+  75:25  error  Expected '===' and instead saw '=='  eqeqeq
+
+✖ 3 problems (3 errors, 0 warnings)
+
+
+2021-05-26 06:51:44 info: ----------------------------------------
+2021-05-26 06:51:44 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-05-26 06:51:44 info: ----------------------------------------
+2021-05-26 06:51:53 error: *** Unit Test Error Report ***
+
+- Generated HTML should contain a <ul> with 3 <li> elements
+- Generated HTML should contain an <li> with title and author for each book of the `myBooks` array
+- Generated HTML should contain an <img> element for each book
+
+2021-05-26 07:01:02 info: ---------------------------------------
+2021-05-26 07:01:02 info: >>> Running Unit Test `ex5-catWalk` <<<
+2021-05-26 07:01:02 info: ---------------------------------------
+2021-05-26 07:01:11 info: All unit tests passed.
+2021-05-26 07:01:15 info: All steps were completed successfully

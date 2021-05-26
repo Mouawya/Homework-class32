@@ -1,0 +1,7 @@
+*** Unit Test Error Report ***
+
+- Game Of Life: a living cell with zero living neighbors should die and have its life time reset to zero
+- Game Of Life: a living cell with one living neighbor should die and have its life time reset to zero
+- Game Of Life: a living cell with three living neighbors should survive and have its life time incremented by one
+- Game Of Life: a living cell with four living neighbors should die and have its life time reset to zero
+- Game Of Life: a dead cell with three living neighbors should come alive and have its lifeTime reset to one
