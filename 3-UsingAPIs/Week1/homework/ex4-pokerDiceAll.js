@@ -24,9 +24,9 @@ exercise file.
 const rollDice = require('../../helpers/pokerDiceRoller');
 
 function rollTheDices() {
-  // TODO Refactor this function
   const dices = [1, 2, 3, 4, 5];
-  return rollDice(1);
+  const dice = dices.map((dice) => rollDice(dice));
+  return Promise.all(dice);
 }
 
 rollTheDices()
@@ -35,3 +35,9 @@ rollTheDices()
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
+
+// My explanation:
+//'Promise.all' returns an array of the promises with their fulfillment or rejection.
+//If all promises are resolved, the promise.all wil return resolve.
+//But in case of rejection, if one promise is rejected, Promise.all will be asynchronously rejected by taking the rejection of that promise.
+//while  other promises will continue and return their fulfillment/rejection.
