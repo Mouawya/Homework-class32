@@ -12,17 +12,25 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 
 function rollTheDices() {
   const dices = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDice()
+  return Promise.race(dices.map((dice) => rollDice(dice)));
 }
 
 // Refactor this function to use async/await and try/catch
-function main() {
-  rollTheDices()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const results = await rollTheDices();
+    console.log('Resolved!', results);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 main();
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
+
+// My explanation:
+// Promise.race returns the first settled promise among other promises.
+// That does not mean cancellation the process and that is why other promises continue.
+// It is similar to what happens in the situation of rejection in Promise.all
