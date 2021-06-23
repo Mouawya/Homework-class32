@@ -20,9 +20,11 @@ const getAnonName = (firstName) => {
   });
 };
 
-getAnonName('John').then((message) => {
-  console.log(message);
-});
+getAnonName('John')
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((error) => console.log(error.message));
 
 // ! Do not change or remove the code below
 module.exports = getAnonName;
