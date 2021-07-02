@@ -32,7 +32,6 @@ async function fetchData(url) {
 
 async function fetchAndPopulatePokemons() {
   const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
-  console.log(data);
   const select = document.createElement('select');
   document.body.appendChild(select);
 
@@ -40,7 +39,10 @@ async function fetchAndPopulatePokemons() {
     const option = document.createElement('option');
     select.appendChild(option);
     option.innerText = pokemon.name;
-    option.onclick = fetchImage(option.text);
+  });
+
+  select.addEventListener('change', (e) => {
+    fetchImage(e.target.value);
   });
 }
 
@@ -48,8 +50,6 @@ async function fetchImage(pokemonName) {
   const data = await fetchData(
     `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
   );
-  console.log(data);
-  console.log(data.sprites.front_default);
   const image = document.createElement('img');
   image.src = data.sprites.front_default;
   document.body.appendChild(image);
@@ -59,6 +59,11 @@ function main() {
   const btn = document.createElement('button');
   btn.innerText = 'Get Pokemon!';
   document.body.appendChild(btn);
+  document.body.style.display = 'flex';
+  document.body.style.flexDirection = 'column';
+  document.body.style.width = '150px';
+
   btn.addEventListener('click', fetchAndPopulatePokemons);
 }
+
 window.addEventListener('load', main);
